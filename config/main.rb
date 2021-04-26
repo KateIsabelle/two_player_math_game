@@ -13,12 +13,12 @@ while game.player1.lives > 0 && game.player2.lives > 0 do
   
   user_input = gets.chomp.to_i
 
-  #if user input matches answer, output 'correct' message, else output 'wrong' message
+  # check if user input matches answer and print response accordingly
   puts question.answer_checker(user_input)
   
   #update current player's lives if their response is wrong
   game.current_player.update_lives if !question.success
-  
+
   #output the scores of both players
   puts "P1: #{game.player1.lives}/3 vs P2: #{game.player2.lives}/3"
 
