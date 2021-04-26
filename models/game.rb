@@ -6,7 +6,6 @@ class Game
     @current_player = 1
     @player1 = Player.new(1)
     @player2 = Player.new(2)
-    # @question = Question.new
   end
   def switch_player(s)
     @current_player = s
